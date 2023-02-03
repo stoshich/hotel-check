@@ -58,6 +58,11 @@ select {
   font: inherit;
 }
 
+button {
+  border: none;
+  padding: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

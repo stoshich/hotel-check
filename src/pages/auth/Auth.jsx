@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import MyButton from '../../components/UI/MyButton/MyButton'
 import classes from './Auth.module.css'
 
 const Auth = () => {
@@ -12,7 +14,7 @@ const Auth = () => {
             <input type="password" />
           </div>
           <div className={classes.btn}>
-            <button>Войти</button>
+            <MyButton>Войти</MyButton>
           </div>
         </div>
       </div>
