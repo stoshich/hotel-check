@@ -6,7 +6,7 @@
 }
 
 .input {
-  color: #EB1717;
+  color: #424242;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -20,6 +20,10 @@
   outline: none;
 }
 
+.inputError {
+  color: #EB1717;
+}
+
 .label {
   font-family: 'Roboto';
   font-style: normal;
@@ -30,7 +34,7 @@
   margin-bottom: 7px;
 }
 
-.container:focus-within label {
+.labelError {
   color: #EB1717;
 }
 

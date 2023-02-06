@@ -72,6 +72,10 @@ button {
   }
 }
 
-.App {
-  /* height: 1000px; */
+.hotels {
+  background: #F4F4F4;
+}
+
+.content {
+  display: flex;
 }

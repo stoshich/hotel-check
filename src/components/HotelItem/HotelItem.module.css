@@ -1,0 +1,48 @@
+.hotel {
+  width: 296px;
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #87878733;
+  box-sizing: content-box;
+  padding-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  color: #424242;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #878787;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
+  color: #878787;
+  margin-right: 8px;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #424242;
+}

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 360px;
+  height: 434px;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #FFFFFF;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #424242;
+}
+
+.sort {
+  display: flex;
+  gap: 8px;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

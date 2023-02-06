@@ -1,0 +1,27 @@
+.sort {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  width: 89px;
+  height: 28px;
+  padding: 4px 8px;
+  border: 1px solid #41522E;
+  background: #FFF;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #41522E;
+}
+
+.inactive {
+  border: 1px solid #E5E5E5;
+}
+
+.inactiveTitle {
+  color: #99A0A3;
+}

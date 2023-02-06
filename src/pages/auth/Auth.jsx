@@ -11,7 +11,6 @@ const Auth = () => {
       <div className={classes.blur}>
         <div className={classes.window}>
           <div className={classes.title}>Simple Hotel Check</div>
-          <Favourite />
           <div className={classes.inputs}>
             <MyInput id='login' label='Логин' type='text' />
             <MyInput id='pass' label='Пароль' type='password' error='Ошибка' />

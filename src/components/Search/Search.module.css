@@ -1,0 +1,20 @@
+.container {
+  width: 360px;
+  height: 410px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn {
+  height: 50px;
+}

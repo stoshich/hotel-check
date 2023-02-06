@@ -1,0 +1,36 @@
+.header {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  padding: 32px;
+  justify-content: space-between;
+  height: 92px;
+  align-items: center;
+}
+
+.logo {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.logout {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoutTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #41522E;
+}
+
+.logoutLogo img {
+  width: 18px;
+  height: 18px;
+}
