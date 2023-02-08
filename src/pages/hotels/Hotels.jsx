@@ -9,7 +9,7 @@ const Hotels = () => {
     <div className='hotels'>
       <Header />
       <div className='content'>
-        <div>
+        <div className='sidebar'>
           <Search />
           <Favourites />
         </div>

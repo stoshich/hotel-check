@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './MyInput.module.css'
 
-const MyInput = ({ id, type, label, error }) => {
+const MyInput = ({ id, type, label, error, value, onChange }) => {
   const errroClass = error ? classes.inputError : ''
   const labelError = error ? classes.labelError : ''
   return (
@@ -11,6 +11,8 @@ const MyInput = ({ id, type, label, error }) => {
         id={id}
         className={classes.input + ' ' + errroClass}
         type={type}
+        value={value}
+        onChange={onChange}
       />
       {error && <div className={classes.error}>{error}</div>}
     </div>

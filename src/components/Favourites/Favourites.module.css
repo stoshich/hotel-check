@@ -3,10 +3,11 @@
   flex-direction: column;
   gap: 32px;
   width: 360px;
-  height: 434px;
+  height: 472px;
   border-radius: 16px;
   padding: 32px;
   background-color: #FFFFFF;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
 }
 
 .title {
