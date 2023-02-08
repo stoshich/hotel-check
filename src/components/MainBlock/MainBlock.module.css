@@ -37,3 +37,39 @@
   line-height: 28px;
   font-weight: 400;
 }
+
+.photos {
+  display: flex;
+  gap: 12px;
+  max-height: 149px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.photos::-webkit-scrollbar {
+  height: 0px;
+}
+
+.info {
+  color: #424242;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.info span {
+  color: #41522E;
+  font-weight: 500;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.items {
+  max-height: 529px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

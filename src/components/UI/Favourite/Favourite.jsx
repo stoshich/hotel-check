@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import heart from '../../../assets/Vector.svg'
+import { removeFavourite, setFavourite } from '../../../redux/slices/favouriteSlice'
 import classes from './Favourite.module.css'
 
-const Favourite = () => {
-  const [checked, setChecked] = useState(false)
-  const [fill, setFill] = useState("white")
-  const [stroke, setStroke] = useState("#C4C4C4")
+const Favourite = (props) => {
+  const { hotelId, check } = props
+  const [checked, setChecked] = useState(check)
+  const [fill, setFill] = useState(check ? '#E55858' : "white")
+  const [stroke, setStroke] = useState(check ? '#E55858' : "#C4C4C4")
+  const dispatch = useDispatch()
   const onMouseOverHandler = () => {
     setStroke("#C4C4C4")
     setFill('#EBEBEB')
@@ -22,10 +26,12 @@ const Favourite = () => {
     if (checked) {
       setStroke("#C4C4C4")
       setFill("white")
+      dispatch(removeFavourite(hotelId))
       setChecked(!checked)
     } else {
       setStroke('#E55858')
       setFill('#E55858')
+      dispatch(setFavourite(props))
       setChecked(!checked)
     }
 

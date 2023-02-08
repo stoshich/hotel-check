@@ -9,11 +9,10 @@ const Search = () => {
   const [location, setLocation] = useState('')
   const [date, setDate] = useState('')
   const [days, setDays] = useState('')
-  const [checkOut, setCheckOut] = useState('')
   const dispatch = useDispatch()
   const buttonHandler = () => {
     if (location && date && days) {
-      setCheckOut(new Date(new Date(date).setDate(new Date(date).getDate() + days)).toISOString().split('T')[0])
+      const checkOut = new Date(new Date(date).setDate(new Date(date).getDate() + +days)).toISOString().split('T')[0]
       dispatch(fetchHotels([location, date, checkOut]))
     }
   }

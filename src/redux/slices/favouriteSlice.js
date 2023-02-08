@@ -11,12 +11,12 @@ const favouriteSlice = createSlice({
     setFavourite: (state, action) => {
       state.favourites.push(action.payload)
     },
-    removeFavouite: (state, action) => {
+    removeFavourite: (state, action) => {
       state.favourites = state.favourites.filter(hotel => hotel.hotelId !== action.payload)
     }
   }
 })
 
-export const { setFavourite, removeFavouite } = favouriteSlice.actions
+export const { setFavourite, removeFavourite } = favouriteSlice.actions
 
 export default favouriteSlice.reducer
