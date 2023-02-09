@@ -11,15 +11,12 @@ const hotelSlice = createSlice({
     setHotels: (state, action) => {
       state.hotels = action.payload
     },
-    clearHotels: (state) => {
-      state.hotels = []
-    },
     fetchHotels: () => {
 
     }
   }
 })
 
-export const { setHotels, clearHotels, fetchHotels } = hotelSlice.actions
+export const { setHotels, fetchHotels } = hotelSlice.actions
 
 export default hotelSlice.reducer

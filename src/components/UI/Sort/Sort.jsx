@@ -1,7 +1,5 @@
 import React from 'react'
 import classes from './Sort.module.css'
-import selectUp from '../../../assets/selectUp.svg'
-import selectDown from '../../../assets/selectDown.svg'
 
 const Sort = ({ title, onClick, flag }) => {
   return (

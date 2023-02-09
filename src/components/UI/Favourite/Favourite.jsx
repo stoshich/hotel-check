@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import heart from '../../../assets/Vector.svg'
 import { removeFavourite, setFavourite } from '../../../redux/slices/favouriteSlice'
 import classes from './Favourite.module.css'
 
@@ -46,7 +45,6 @@ const Favourite = (props) => {
           strokeLinejoin="round" />
       </svg>
     </div>
-    // <img className={classes.heart} src={heart} alt="like" />
   )
 }
 

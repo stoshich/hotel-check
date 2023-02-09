@@ -1,6 +1,5 @@
 import React from 'react'
 import classes from './Photo.module.css'
-import img from '../../../assets/Rectangle23.png'
 
 const Photo = ({ source }) => {
   return (
