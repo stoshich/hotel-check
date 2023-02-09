@@ -3,7 +3,7 @@ import { put, takeEvery } from 'redux-saga/effects'
 import { fetchHotels, setHotels } from '../slices/hotelSlice'
 
 const fetchFunc = async (location, checkIn, checkOut) => {
-  const url = `http://engine.hotellook.com/api/v2/cache.json?location=${location}&currency=rub&checkIn=${checkIn}&checkOut=${checkOut}&limit=20`
+  const url = `https://engine.hotellook.com/api/v2/cache.json?location=${location}&currency=rub&checkIn=${checkIn}&checkOut=${checkOut}&limit=20`
   const response = await axios.get(url)
   return response.data
 }
