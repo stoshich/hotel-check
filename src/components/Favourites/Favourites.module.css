@@ -28,8 +28,16 @@
   gap: 16px;
   overflow-y: auto;
   overflow-x: hidden;
+  width: 312px;
 }
 
 .hotels::-webkit-scrollbar {
-  width: 0px;
+  width: 2px;
+  background-color: #E7E7E7;
+  border-radius: 2px;
+}
+
+.hotels::-webkit-scrollbar-thumb {
+  background-color: #41522E;
+  border-radius: 2px;
 }

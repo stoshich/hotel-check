@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './MyInput.module.css'
 
-const MyInput = ({ id, type, label, error, value, onChange }) => {
-  const errroClass = error ? classes.inputError : ''
-  const labelError = error ? classes.labelError : ''
+const MyInput = ({ id, type, label, error, value, onChange, onBlur, dirty }) => {
+  const errroClass = error && dirty ? classes.inputError : ''
+  const labelError = error && dirty ? classes.labelError : ''
   return (
     <div className={classes.container}>
       <label className={classes.label + ' ' + labelError} htmlFor={id}>{label}</label>
@@ -13,8 +13,9 @@ const MyInput = ({ id, type, label, error, value, onChange }) => {
         type={type}
         value={value}
         onChange={onChange}
+        onBlur={onBlur}
       />
-      {error && <div className={classes.error}>{error}</div>}
+      {error && dirty && <div className={classes.error}>{error}</div>}
     </div>
   )
 }

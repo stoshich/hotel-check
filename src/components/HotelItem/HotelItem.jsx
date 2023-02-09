@@ -1,4 +1,5 @@
 import React from 'react'
+import Stars from '../Stars/Stars'
 import Favourite from '../UI/Favourite/Favourite'
 import classes from './HotelItem.module.css'
 
@@ -12,7 +13,9 @@ const HotelItem = (props) => {
       </div>
       <div className={classes.date}>date</div>
       <div className={classes.footer}>
-        <div className={classes.raiting}>{stars}</div>
+        <div className={classes.raiting}>
+          <Stars amount={stars} />
+        </div>
         <div>
           <span className={classes.price}>Price:</span>
           <span className={classes.value}>{priceFrom}</span>

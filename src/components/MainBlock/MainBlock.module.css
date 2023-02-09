@@ -73,3 +73,15 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+.items::-webkit-scrollbar {
+  width: 2px;
+  background-color: #E7E7E7;
+  border-radius: 2px;
+}
+
+.items::-webkit-scrollbar-thumb {
+  background-color: #41522E;
+  height: 100px;
+  border-radius: 2px;
+}

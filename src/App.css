@@ -72,6 +72,10 @@ button {
   }
 }
 
+.App {
+  font-family: 'Roboto', sans-serif;
+}
+
 .hotels {
   background: #F4F4F4;
 }
