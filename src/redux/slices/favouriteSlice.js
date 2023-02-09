@@ -25,10 +25,11 @@ const favouriteSlice = createSlice({
     },
     sortByPriceASC: (state) => {
       state.favourites = state.favourites.sort((hotel1, hotel2) => hotel1.priceFrom - hotel2.priceFrom)
-    }
+    },
+    resetFavourites: () => initialState
   }
 })
 
-export const { setFavourite, removeFavourite, sortByRaitingDESC, sortByRaitingASC, sortByPriceDESC, sortByPriceASC } = favouriteSlice.actions
+export const { setFavourite, removeFavourite, sortByRaitingDESC, sortByRaitingASC, sortByPriceDESC, sortByPriceASC, resetFavourites } = favouriteSlice.actions
 
 export default favouriteSlice.reducer

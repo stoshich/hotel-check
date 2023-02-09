@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { fetchHotels } from '../../redux/slices/hotelSlice'
 import { setDate, setDays } from '../../redux/slices/inputSlice'
 import MyButton from '../UI/MyButton/MyButton'
@@ -10,13 +10,11 @@ const Search = () => {
   const [location, setLocation] = useState('Москва')
   const [dateInput, setDateInput] = useState(new Date().toISOString().split('T')[0])
   const [daysInput, setDaysInput] = useState('1')
-  const date = useSelector(state => state.input.date)
-  const days = useSelector(state => state.input.days)
   const dispatch = useDispatch()
   const buttonHandler = () => {
-    if (location && date && days) {
-      const checkOut = new Date(new Date(date).setDate(new Date(date).getDate() + +days)).toISOString().split('T')[0]
-      dispatch(fetchHotels([location, date, checkOut]))
+    if (location && dateInput && daysInput) {
+      const checkOut = new Date(new Date(dateInput).setDate(new Date(dateInput).getDate() + +daysInput)).toISOString().split('T')[0]
+      dispatch(fetchHotels([location, dateInput, checkOut]))
       dispatch(setDate(dateInput))
       dispatch(setDays(daysInput))
     }

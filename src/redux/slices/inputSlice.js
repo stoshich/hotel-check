@@ -14,10 +14,11 @@ const inputSlice = createSlice({
     },
     setDays: (state, action) => {
       state.days = action.payload
-    }
+    },
+    resetInputs: () => initialState
   }
 })
 
-export const { setDate, setDays } = inputSlice.actions
+export const { setDate, setDays, resetInputs } = inputSlice.actions
 
 export default inputSlice.reducer
