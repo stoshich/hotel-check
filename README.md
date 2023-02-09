@@ -2,7 +2,7 @@
 
 ## Demo
 
-
+Vercel: <https://hotel-check.vercel.app/>
 
 ## Описание
 
